@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ICommand.cs" />
+    <Compile Remove="ICommandHandler.cs" />
+    <Compile Remove="IOrderModule.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lakeshore.Wms.RepositoryKeyStore" Version="1.0.6" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Lakeshore.KafkaClient" Version="1.0.14" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection.Libraries" Version="1.0.0" />
+	  <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lakeshore.Domain\Lakeshore.Domain.csproj" />
+    <ProjectReference Include="..\Lakeshore.Dto\Lakeshore.Dto.csproj" />
+  </ItemGroup>
+
+</Project>

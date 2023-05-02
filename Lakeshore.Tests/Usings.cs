@@ -1,0 +1,16 @@
+global using NUnit.Framework;
+//global using Lakeshore.Domain.Models.Views;
+global using Lakeshore.Domain;
+//global using Lakeshore.Application.Helpers;
+global using Lakeshore.Wms.RepositoryKeyStore.ClassMappings;
+global using Moq;
+global using Microsoft.Extensions.Logging;
+global using Lakeshore.Wms.Repository.RepositoryKeyStore;
+global using Lakeshore.Domain.Models;
+global using Lakeshore.Infrastructure.EntityModelConfiguration;
+//global using Lakeshore.Tests.Helpers;
+global using Microsoft.EntityFrameworkCore;
+//global using Lakeshore.Application.ConfirmationOfLabor.DomainEventHandlers;
+global using FluentAssertions;
+//global using Lakeshore.Dto.ConfirmationOfLabor;
+global using Lakeshore.Kafka.Client.Interfaces;
